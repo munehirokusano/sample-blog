@@ -1,0 +1,30 @@
+#title {
+    color: blue;
+    padding: 10px 30px;
+    background-color: silver;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 2px solid black;
+}
+    
+.description {
+    color: blue;
+    padding: 10px 30px;
+    border-radius: 2px solid black;
+}
+    
+.box {
+    background-color: silver;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+.box2 {
+    background: red;
+    width: 300px;
+    height: 300px;
+
+}
