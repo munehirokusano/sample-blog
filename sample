@@ -1,0 +1,153 @@
+ec2-user:~/environment $ ls
+README.md  workspace
+ec2-user:~/environment $ cd
+ec2-user:~ $ ls
+environment  git  gitsample  gitsample2  node_modules  package-lock.json  sample  space  space1  workspace
+ec2-user:~ $ cd
+ec2-user:~ $ cd enviroment
+bash: cd: enviroment: No such file or directory
+ec2-user:~ $ cd environment
+ec2-user:~/environment $ workspace
+bash: workspace: command not found
+ec2-user:~/environment $ cd workspace
+ec2-user:~/environment/workspace $ ls
+html  php_practice
+ec2-user:~/environment/workspace $ cd html
+ec2-user:~/environment/workspace/html $ ls
+css.intro  front05  sample blog
+ec2-user:~/environment/workspace/html $ cd
+ec2-user:~ $ ssh -T git@github.com
+Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+Hi munehirokusano! You've successfully authenticated, but GitHub does not provide shell access.
+ec2-user:~ $ cd environment
+ec2-user:~/environment $ cd workspace
+ec2-user:~/environment/workspace $ cd html
+ec2-user:~/environment/workspace/html $ touch sample blog                                                                                                       
+ec2-user:~/environment/workspace/html $ git add sample blog
+fatal: Not a git repository (or any of the parent directories): .git
+ec2-user:~/environment/workspace/html $ git init
+Initialized empty Git repository in /home/ec2-user/environment/workspace/html/.git/
+ec2-user:~/environment/workspace/html (master) $ touch sample blog
+ec2-user:~/environment/workspace/html (master) $ git add sample blog
+ec2-user:~/environment/workspace/html (master) $ git add . 
+ec2-user:~/environment/workspace/html (master) $ git commit -m "課題提出_sampleblog"
+[master (root-commit) afd3c64] 課題提出_sampleblog
+ 14 files changed, 1295 insertions(+)
+ create mode 100644 blog
+ create mode 100644 css.intro/css/style.css
+ create mode 100644 css.intro/index.html
+ create mode 100644 front05/css/normalize.css
+ create mode 100644 front05/css/style.css
+ create mode 100644 front05/image/staff_01.gif
+ create mode 100644 front05/image/staff_02.gif
+ create mode 100644 front05/image/staff_03.gif
+ create mode 100644 front05/index.html
+ create mode 100644 sample
+ create mode 100644 sample blog/css/normalize.css
+ create mode 100644 sample blog/css/style.css
+ create mode 100644 sample blog/image/person.gif
+ create mode 100644 sample blog/index.html
+ec2-user:~/environment/workspace/html (master) $ git log
+commit afd3c64e7baa8dd86927197ef74b4f69dd09fdee (HEAD -> master)
+Author: 名前 <メールアドレス>
+Date:   Mon May 4 00:54:21 2020 +0000
+
+    課題提出_sampleblog
+ec2-user:~/environment/workspace/html (master) $ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ec2-user:~/environment/workspace/html (master) $ git remote add origin git@github.com:munehirokusano/sample blog.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+ec2-user:~/environment/workspace/html (master) $ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ec2-user:~/environment/workspace/html (master) $ git remote add origin git@github.com:munehirokusano/sample-blog.git
+ec2-user:~/environment/workspace/html (master) $ git push -u origim master
+fatal: 'origim' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ec2-user:~/environment/workspace/html (master) $ cd ..
+ec2-user:~/environment/workspace $ ls
+html  php_practice
+ec2-user:~/environment/workspace $ cd php_practice
+ec2-user:~/environment/workspace/php_practice $ ls
+practice.php
+ec2-user:~/environment/workspace/php_practice $ touch practice.php
+ec2-user:~/environment/workspace/php_practice $ git init
+Initialized empty Git repository in /home/ec2-user/environment/workspace/php_practice/.git/
+ec2-user:~/environment/workspace/php_practice (master) $ touch practice.php
+ec2-user:~/environment/workspace/php_practice (master) $ git add practice.php
+ec2-user:~/environment/workspace/php_practice (master) $ add .
+bash: add: command not found
+ec2-user:~/environment/workspace/php_practice (master) $ git add .
+ec2-user:~/environment/workspace/php_practice (master) $ git commit -m "課題提出_practice.php"
+[master (root-commit) ed2d3c5] 課題提出_practice.php
+ 1 file changed, 61 insertions(+)
+ create mode 100644 practice.php
+ec2-user:~/environment/workspace/php_practice (master) $ git log
+commit ed2d3c552c1daa80787bbe4e68c0d4486cfd8576 (HEAD -> master)
+Author: 名前 <メールアドレス>
+Date:   Mon May 4 01:15:17 2020 +0000
+
+    課題提出_practice.php
+ec2-user:~/environment/workspace/php_practice (master) $ git remote add origin git@github.com:munehirokusano/practice.php.git
+ec2-user:~/environment/workspace/php_practice (master) $ git push -u origin master
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ec2-user:~/environment/workspace/php_practice (master) $ git push -u origin master
+Counting objects: 3, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 765 bytes | 765.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:munehirokusano/practice.php.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+ec2-user:~/environment/workspace/php_practice (master) $ cd ..
+ec2-user:~/environment/workspace $ ls7
+bash: ls7: command not found
+ec2-user:~/environment/workspace $ ls
+html  php_practice
+ec2-user:~/environment/workspace $ cd html
+ec2-user:~/environment/workspace/html (master) $ ls
+blog  css.intro  front05  sample  sample blog
+ec2-user:~/environment/workspace/html (master) $ cd sample blog
+bash: cd: sample: Not a directory
+ec2-user:~/environment/workspace/html (master) $ touch sample blog
+ec2-user:~/environment/workspace/html (master) $ git remote add origin git@github.com:munehirokusano/sample-blog.git                                            
+fatal: remote origin already exists.
+ec2-user:~/environment/workspace/html (master) $ ls
+blog  css.intro  front05  sample  sample blog
+ec2-user:~/environment/workspace/html (master) $ cd sample blog
+bash: cd: sample: Not a directory
+ec2-user:~/environment/workspace/html (master) $ cd front05
+ec2-user:~/environment/workspace/html/front05 (master) $ cd ..
+ec2-user:~/environment/workspace/html (master) $ cd sample-blog
+bash: cd: sample-blog: No such file or directory
+ec2-user:~/environment/workspace/html (master) $ cd /home/ec2-user/environment/workspace/html/sample blog
+bash: cd: /home/ec2-user/environment/workspace/html/sample: Not a directory
+ec2-user:~/environment/workspace/html (master) $ sample blog                                                                                                    
+bash: sample: command not found
+ec2-user:~/environment/workspace/html (master) $ cd sample blog                                                                                                 
+bash: cd: sample: Not a directory
+ec2-user:~/environment/workspace/html (master) $ 
